@@ -6,7 +6,7 @@ import { getBaseUrl } from 'app/util/baseURL';
 
 const PostList = async() => {
 
-    const baseURL =getBaseUrl()
+    // const baseURL =getBaseUrl()
     const data =await fetch('http://localhost:3000/api/post', { cache: 'no-store' });
     const postsData = await data.json();
 
